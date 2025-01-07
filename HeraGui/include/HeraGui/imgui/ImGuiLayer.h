@@ -5,7 +5,7 @@
 namespace HeraGui {
     class HERA_API ImGuiLayer : public Layer {
     public:
-        ImGuiLayer(Window* window);
+        ImGuiLayer();
         virtual ~ImGuiLayer();
 
         virtual void OnAttach() override;
@@ -21,8 +21,6 @@ namespace HeraGui {
 
     private:
         bool m_BlockEvents = true;
-        Window* m_Window;
-        void* m_ImGuiContext;
     };
 
 }
