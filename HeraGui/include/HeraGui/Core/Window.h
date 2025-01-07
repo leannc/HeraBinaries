@@ -31,6 +31,7 @@ namespace HeraGui {
         virtual uint32_t GetHeight() const = 0;
 
         virtual void* GetNativeWindow() const = 0;
+        virtual void* GetWindowContext() = 0;
 
         static std::unique_ptr<Window> Create(const WindowProps& specification = WindowProps());
     };   

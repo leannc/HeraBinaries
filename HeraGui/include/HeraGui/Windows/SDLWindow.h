@@ -2,6 +2,7 @@
 
 #include <HeraGui/Core/Window.h>
 #include <SDL2/SDL.h>
+#include <HeraGui/imgui/ImGuiLayer.h>
 
 namespace HeraGui {
 
@@ -14,7 +15,7 @@ public:
     void* GetNativeWindow() const override { return m_Window; }
     uint32_t GetWidth() const override { return m_Data.Width; }
     uint32_t GetHeight() const override { return m_Data.Height; }
-    void* GetWindowContext();
+    void* GetWindowContext() override { return &m_Context; }
 
 private:
     SDL_Window* m_Window;
@@ -27,7 +28,6 @@ private:
     };
     
     WindowData m_Data;
-
 };
 
 }
