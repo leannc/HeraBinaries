@@ -2,7 +2,7 @@
 
 namespace HeraGui {
     
-  struct WindowProps
+  struct HERA_API WindowProps
     {
         std::string Title = "Hera";
         uint32_t Width;
@@ -19,7 +19,7 @@ namespace HeraGui {
     };
 
     // Interface representing a desktop system based Window
-    class Window
+    class HERA_API Window
     {
     public:
 
@@ -30,6 +30,7 @@ namespace HeraGui {
         virtual uint32_t GetWidth() const = 0;
         virtual uint32_t GetHeight() const = 0;
 
+        virtual void* GetNativeWindow() const = 0;
 
         static std::unique_ptr<Window> Create(const WindowProps& specification = WindowProps());
     };   
