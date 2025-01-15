@@ -2,7 +2,6 @@
 
 #include <HeraGui/Core/Window.h>
 #include <SDL2/SDL.h>
-#include <HeraGui/imgui/ImGuiLayer.h>
 
 namespace HeraGui {
 
@@ -16,6 +15,7 @@ public:
     uint32_t GetWidth() const override { return m_Data.Width; }
     uint32_t GetHeight() const override { return m_Data.Height; }
     void* GetWindowContext() override { return &m_Context; }
+    void RegisterEventHandler(EventHandler* e_handler) override { m_EventHandlers.push_back(e_handler); }
 
 private:
     SDL_Window* m_Window;
@@ -28,6 +28,7 @@ private:
     };
     
     WindowData m_Data;
+    std::vector<EventHandler*> m_EventHandlers;
 };
 
 }

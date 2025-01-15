@@ -1,4 +1,5 @@
 #pragma once
+#include "EventHandler.h"
 
 namespace HeraGui {
     
@@ -32,6 +33,9 @@ namespace HeraGui {
 
         virtual void* GetNativeWindow() const = 0;
         virtual void* GetWindowContext() = 0;
+
+
+        virtual void RegisterEventHandler(EventHandler* e_handler) = 0;
 
         static std::unique_ptr<Window> Create(const WindowProps& specification = WindowProps());
     };   
