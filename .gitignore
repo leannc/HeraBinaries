@@ -5,3 +5,5 @@ out
 *~msync~*
 .vscode
 Hera.log
+CMakeFiles/
+cmake_install.cmake
