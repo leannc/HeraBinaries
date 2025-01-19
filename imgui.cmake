@@ -3,6 +3,7 @@ set(prject "imgui")
 
 set(SOURCE_DIR "${DEPENDENCY_DIR}/imgui")
 
+message("source dir is : "${SOURCE_DIR})
 file(GLOB IMGUI_SOURCE_FILES
     "${SOURCE_DIR}/imgui.cpp"
     "${SOURCE_DIR}/imgui_demo.cpp"
