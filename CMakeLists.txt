@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
-project(HeraGui)
+include(ExternalProject)
+project(HeraBinary)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -9,5 +10,6 @@ set(DEPENDENCY_DIR "${WORKSPACE_DIR}/Dependencies")
 include(imgui.cmake)
 include(spdlog.cmake)
 include(googletest.cmake)
+include(googlebenchmark.cmake)
 
 
