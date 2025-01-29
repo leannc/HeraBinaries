@@ -8,5 +8,6 @@ set(DEPENDENCY_DIR "${WORKSPACE_DIR}/Dependencies")
 
 include(imgui.cmake)
 include(spdlog.cmake)
+include(googletest.cmake)
 
 
