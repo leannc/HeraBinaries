@@ -11,6 +11,7 @@ ExternalProject_Add(
     SOURCE_DIR ${SOURCE_DIR}
     CMAKE_ARGS  -DCMAKE_INSTALL_PREFIX=${Binary_DIR}/googletest/${LIB_TYPE_DIR_NAME}
                 -Dgtest_force_shared_crt=ON 
+                -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
     INSTALL_DIR ${Binary_DIR}/googletest/${LIB_TYPE_DIR_NAME}
 )
 

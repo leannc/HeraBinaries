@@ -11,5 +11,6 @@ include(imgui.cmake)
 include(spdlog.cmake)
 include(googletest.cmake)
 include(googlebenchmark.cmake)
+include(sdl2.cmake)
 
 

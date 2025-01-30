@@ -37,7 +37,7 @@ add_library(${prject}  STATIC
     PRIVATE src/HeraGui
     PRIVATE  ${SOURCE_DIR}
     PRIVATE  ${SOURCE_DIR}/backends
-    PRIVATE  ${Binary_DIR}/SDL2/include/SDL2
+    PRIVATE  ${Binary_DIR}/SDL2/${LIB_TYPE_DIR_NAME}/include/SDL2
 )
 
 
