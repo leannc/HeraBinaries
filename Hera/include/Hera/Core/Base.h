@@ -20,12 +20,12 @@
 
 #ifdef HERA_ENABLE_ASSERTS
     #ifdef PLATFORM_WINDOWS
-        #define HERA_ASSERT(x, ...)  if(!(x)) { HERA_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }
-        #define HERA_CORE_ASSERT(x, ...)  if(!(x)) { HERA_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }
+        #define HERA_ASSERT(x, ...)  if (!(x)) { HERA_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }
+        #define HERA_CORE_ASSERT(x, ...)  if (!(x)) { HERA_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }
     #else
         #include <csignal>
-        #define HERA_ASSERT(x, ...) { if(!(x)) { HERA_ERROR("Assertion Failed: {0}", __VA_ARGS__); raise(SIGTRAP); } }
-        #define HERA_CORE_ASSERT(x, ...) { if(!(x)) { HERA_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); raise(SIGTRAP); } }
+        #define HERA_ASSERT(x, ...) { if (!(x)) { HERA_ERROR("Assertion Failed: {0}", __VA_ARGS__); raise(SIGTRAP); } }
+        #define HERA_CORE_ASSERT(x, ...) { if (!(x)) { HERA_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); raise(SIGTRAP); } }
     #endif
 #else
 #define HERA_CORE_ASSERT(condition, ...)

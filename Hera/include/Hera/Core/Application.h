@@ -3,11 +3,11 @@
 
 
 namespace Hera {
-    class HERA_API Application {
-        public:
-            virtual ~Application() {};
-            virtual void Run() = 0;
-    };
+class HERA_API Application {
+ public:
+    virtual ~Application() {}
+    virtual void Run() = 0;
+};
 
-    Application* CreateApplication();
-}
+Application* CreateApplication();
+}  // namespace Hera
