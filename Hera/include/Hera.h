@@ -6,6 +6,6 @@
 
 #pragma once
 
-#include "Hera/Core/Application.h"
-#include "Hera/Core/Log.h"
-#include "Hera/HeraInit.h"
+#include <Hera/Core/Application.h>
+#include <Hera/Core/Log.h>
+#include <Hera/HeraInit.h>
