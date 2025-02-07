@@ -4,19 +4,18 @@
 #include "HeraGui/Core/EventHandler.h"
 
 namespace HeraGui {
-class HERA_API ImGuiLayer : public Layer, EventHandler {
+class HERA_API ImGuiLayer : public Layer, public EventHandler {
  public:
-     explicit ImGuiLayer(Window* window);
-     virtual ~ImGuiLayer();
-     void OnAttach() override;
-     void OnDetach() override;
-     void OnEvent(Event* e) override;
-     void Begin();
-     void End();
-     void BlockEvents(bool block) { block_events_ = block; }
-     void SetDarkThemeColors();
+  explicit ImGuiLayer();
+  virtual ~ImGuiLayer();
+  void OnAttach() override;
+  void OnDetach() override;
+  void OnEvent(Event* e) override;
+  void Begin();
+  void End();
+  void BlockEvents(bool block) { block_events_ = block; }
+  void SetDarkThemeColors();
  private:
-     bool block_events_ = true;
-     Window* window_;
+  bool block_events_ = true;
 };
 }  // namespace HeraGui

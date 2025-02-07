@@ -1,7 +1,7 @@
 #pragma once
 
-#include <HeraGui/Core/Window.h>
 #include <SDL2/SDL.h>
+#include <HeraGui/Core/Window.h>
 
 namespace HeraGui {
 
@@ -11,9 +11,9 @@ class HERA_API SDLWindow : public Window {
     ~SDLWindow();
 
     void OnUpdate() override;
-    void* GetNativeWindow() const override { return window_; }
     uint32_t GetWidth() const override { return data_.Width; }
     uint32_t GetHeight() const override { return data_.Height; }
+    void* GetNativeWindow() const override { return window_; }
     void* GetWindowContext() override { return &context_; }
     void RegisterEventHandler(EventHandler* e_handler) override { event_handlers_.push_back(e_handler); }
 
