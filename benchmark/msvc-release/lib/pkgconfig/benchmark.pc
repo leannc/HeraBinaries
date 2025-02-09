@@ -1,0 +1,12 @@
+prefix=D:/Hera2.0/HeraBinaries/benchmark/msvc-release
+exec_prefix=${prefix}
+libdir=D:/Hera2.0/HeraBinaries/benchmark/msvc-release/lib
+includedir=D:/Hera2.0/HeraBinaries/benchmark/msvc-release/include
+
+Name: benchmark
+Description: Google microbenchmark framework
+Version: 1.9.1.19
+
+Libs: -L${libdir} -lbenchmark
+Libs.private: -lpthread 
+Cflags: -I${includedir}
