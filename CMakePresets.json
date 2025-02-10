@@ -1,6 +1,6 @@
 {
     "version": 10,
     "include": [
-        "../Hera/CMakePresets.json"  //这里是一个相对依赖，
+        "../Hera/CMakePresets.json"
     ]
 }

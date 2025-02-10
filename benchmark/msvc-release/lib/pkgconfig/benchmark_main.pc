@@ -1,4 +1,4 @@
-libdir=D:/Hera2.0/HeraBinaries/benchmark/msvc-release/lib
+libdir=E:/Syncthing/code/Hera2.0/HeraBinaries/benchmark/msvc-release/lib
 
 Name: benchmark
 Description: Google microbenchmark framework (with main() function)

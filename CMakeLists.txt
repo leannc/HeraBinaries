@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(DEPENDENCY_DIR "${WORKSPACE_DIR}/Dependencies")
 
 include(sdl2.cmake)
+include(glfw.cmake)
 include(imgui.cmake)
 include(spdlog.cmake)
 include(googletest.cmake)

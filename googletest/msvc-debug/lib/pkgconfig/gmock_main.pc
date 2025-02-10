@@ -1,5 +1,5 @@
-libdir=D:/Hera2.0/HeraBinaries/googletest/msvc-debug/lib
-includedir=D:/Hera2.0/HeraBinaries/googletest/msvc-debug/include
+libdir=E:/Syncthing/code/Hera2.0/HeraBinaries/googletest/msvc-debug/lib
+includedir=E:/Syncthing/code/Hera2.0/HeraBinaries/googletest/msvc-debug/include
 
 Name: gmock_main
 Description: GoogleMock (with main() function)

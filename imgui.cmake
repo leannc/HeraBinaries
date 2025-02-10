@@ -15,6 +15,7 @@ file(GLOB IMGUI_SOURCE_FILES
 file(GLOB IMGUI_IMPL_OPENGL3_SOURCE_FILES
     "${SOURCE_DIR}/backends/imgui_impl_opengl3.cpp"
     "${SOURCE_DIR}/backends/imgui_impl_sdl2.cpp"
+    "${SOURCE_DIR}/backends/imgui_impl_glfw.cpp"
 )
 
 file(GLOB_RECURSE IMGUI_HEADER_FILES
@@ -26,6 +27,7 @@ file(GLOB_RECURSE IMGUI_HEADER_FILES
     "${SOURCE_DIR}/imstb_truetype.h"
     "${SOURCE_DIR}/backends/imgui_impl_opengl3.h"
     "${SOURCE_DIR}/backends/imgui_impl_sdl2.h"
+    "${SOURCE_DIR}/backends/imgui_impl_glfw.h"
 )
 
 add_library(${prject}  STATIC
@@ -38,6 +40,7 @@ add_library(${prject}  STATIC
     PRIVATE  ${SOURCE_DIR}
     PRIVATE  ${SOURCE_DIR}/backends
     PRIVATE  ${Binary_DIR}/SDL2/${LIB_TYPE_DIR_NAME}/include/SDL2
+    PRIVATE  ${Binary_DIR}/glfw/${LIB_TYPE_DIR_NAME}/include
 )
 
 

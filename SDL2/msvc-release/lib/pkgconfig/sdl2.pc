@@ -1,6 +1,6 @@
 # sdl pkg-config source file
 
-prefix=D:/Hera2.0/HeraBinaries/SDL2/msvc-release
+prefix=E:/Syncthing/code/Hera2.0/HeraBinaries/SDL2/msvc-release
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
